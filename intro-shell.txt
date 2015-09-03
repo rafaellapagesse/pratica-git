@@ -1,0 +1,44 @@
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop
+$ cd        (para ir pra Raiz)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ cd Desktop    (mudei para a pasta Desktop)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop
+$ mkdir pratica-shell (criei a pasta pratica-shell)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop
+$ ls      (para confirmar se tinha criado a pasta)
+Border?? de Pagamento_tina1.pdf
+Border?? de Pagamento_tina2.pdf
+Corre????o da prova (3).docx
+Counter-Strike Global Offensive.url
+MAT-ESP
+PASSAGEM_SNO.pdf
+PASSAGEM_SNO_DADOS.pdf
+Rafael
+Viagem BH.xlsx
+backuppendrive_Rafa
+desktop.ini
+pratica-shell
+relatorio discente Marcela.pdf
+uerj-pythoncourse-20150629
+~$TEC????O DE FEI????ES OCEANOGR??FICAS SUPERFICIAIS_.docx
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop
+$ cd pratica-shell/       (entrei na pasta criada)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop/pratica-shell
+$ touch intro-shell.txt     (criei este arquivo)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop/pratica-shell
+$ ls
+intro-shell.txt            (para confirmar se criou)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop/pratica-shell
+$ touch alunos.txt          (criei outro arquivo)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/Desktop/pratica-shell
+$ ls        (para confirmar que criou)
+alunos.txt  intro-shell.txt
