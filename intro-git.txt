@@ -1,0 +1,300 @@
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ pwd
+/c/Users/Rafael Lapagesse
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ cd
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ cd desktop
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop
+$ mkdir leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop
+$ cd leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ mkdir repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/repo
+$ git init --bare
+Initialized empty Git repository in c:/Users/Rafael Lapagesse/desktop/leandro/re
+po/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/repo (BARE:master)
+$ cd ..
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ git clone repo pratica-git-leandro
+Cloning into 'pratica-git-leandro'...
+warning: You appear to have cloned an empty repository.
+done.
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica-git-leandro/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git config user.name leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git config user.email leandronogueira5@gmail.com
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git add alunos.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   alunos.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        intro-shell.txt
+
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git commmit -m "adicionei o arquivo alunos txt"
+git: 'commmit' is not a git command. See 'git --help'.
+
+Did you mean this?
+        commit
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git commit -m "adicionei o arquivo alunos txt"
+[master (root-commit) 1e57f9a] adicionei o arquivo alunos txt
+ 1 file changed, 2 insertions(+)
+ create mode 100644 alunos.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        intro-shell.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git add intro-shell
+fatal: pathspec 'intro-shell' did not match any files
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git add intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git commit -m "adicionei o arquivo intro-shell"
+[master b7e6da4] adicionei o arquivo intro-shell
+ 1 file changed, 44 insertions(+)
+ create mode 100644 intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working directory clean
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git log
+commit b7e6da45d692dadbcb2ab32c7749654f7e039eca
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:17:46 2015 -0300
+
+    adicionei o arquivo intro-shell
+
+commit 1e57f9a62266c3605a47ea6d59812ef8088fb76c
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:15:58 2015 -0300
+
+    adicionei o arquivo alunos txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 994 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To c:/Users/Rafael Lapagesse/desktop/leandro/repo
+ * [new branch]      master -> master
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ cd
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ cd desktop
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop
+$ cd leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ git clone repo pratica-git-rafael
+Cloning into 'pratica-git-rafael'...
+done.
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica-
+pratica-git-leandro/ pratica-git-rafael/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica-git-rafael
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ ls
+alunos.txt  intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ touch bubble-sort.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ ls
+alunos.txt  bubble-sort.txt  intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ cd ..
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  pratica-git-rafael  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ rm pratica
+pratica-git-leandro/ pratica-git-rafael/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ rm pratica-git-rafael
+rm: `pratica-git-rafael' is a directory
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  pratica-git-rafael  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~
+$ cd desktop/leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ git clone repo pratica-git-rafael
+Cloning into 'pratica-git-rafael'...
+done.
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ ls
+pratica-git-leandro  pratica-git-rafael  repo
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica
+pratica-git-leandro/ pratica-git-rafael/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica-git-rafael
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ ls
+alunos.txt  intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git config user.name rafaellapagesse
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git config user.email rafaellapagesse@gmail.com
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ touch bubble-sort.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ ls
+alunos.txt  bubble-sort.txt  intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git add bubble-sort.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   bubble-sort.txt
+
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git commit -m "adicionei o arquivo de texto bubble-sort"
+[master 8b95291] adicionei o arquivo de texto bubble-sort
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bubble-sort.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git log
+commit 8b9529150d91590b43f90c50e6770472ef04af9e
+Author: rafaellapagesse <rafaellapagesse@gmail.com>
+Date:   Thu Sep 3 13:24:41 2015 -0300
+
+    adicionei o arquivo de texto bubble-sort
+
+commit b7e6da45d692dadbcb2ab32c7749654f7e039eca
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:17:46 2015 -0300
+
+    adicionei o arquivo intro-shell
+
+commit 1e57f9a62266c3605a47ea6d59812ef8088fb76c
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:15:58 2015 -0300
+
+    adicionei o arquivo alunos txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git push  origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 335 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To c:/Users/Rafael Lapagesse/desktop/leandro/repo
+   b7e6da4..8b95291  master -> master
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ ls
+alunos.txt  bubble-sort.txt  intro-shell.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ touch intro-git.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$
