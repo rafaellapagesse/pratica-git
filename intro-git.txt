@@ -15,13 +15,13 @@ Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop
 $ cd leandro
 
 Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
-$ mkdir repo
+$ mkdir repo 
 
 Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
 $ cd repo
 
 Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/repo
-$ git init --bare
+$ git init --bare 
 Initialized empty Git repository in c:/Users/Rafael Lapagesse/desktop/leandro/re
 po/
 
@@ -297,4 +297,87 @@ Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
 $ touch intro-git.txt
 
 Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
-$
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        intro-git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git add intro-git.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git commit -m "adicionei o arquivo contendo o código da criação do repositori
+o"
+[master 55d19e0] adicionei o arquivo contendo o código da criação do repositorio
+
+ 1 file changed, 300 insertions(+)
+ create mode 100644 intro-git.txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git log
+commit 55d19e0e183f7852e3bbf2aed022ef01c86fecd9
+Author: rafaellapagesse <rafaellapagesse@gmail.com>
+Date:   Thu Sep 3 13:40:41 2015 -0300
+
+    adicionei o arquivo contendo o código da criação do repositorio
+
+commit 8b9529150d91590b43f90c50e6770472ef04af9e
+Author: rafaellapagesse <rafaellapagesse@gmail.com>
+Date:   Thu Sep 3 13:24:41 2015 -0300
+
+    adicionei o arquivo de texto bubble-sort
+
+commit b7e6da45d692dadbcb2ab32c7749654f7e039eca
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:17:46 2015 -0300
+
+    adicionei o arquivo intro-shell
+
+commit 1e57f9a62266c3605a47ea6d59812ef8088fb76c
+Author: leandro <leandronogueira5@gmail.com>
+Date:   Thu Sep 3 13:15:58 2015 -0300
+
+    adicionei o arquivo alunos txt
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.69 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To c:/Users/Rafael Lapagesse/desktop/leandro/repo
+   8b95291..55d19e0  master -> master
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-rafael (master)
+$ cd ..
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica
+pratica-git-leandro/ pratica-git-rafael/
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro
+$ cd pratica-git-leandro
+
+Rafael Lapagesse@RAFAELLAPAGESSE ~/desktop/leandro/pratica-git-leandro (master)
+$ git pull
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (6/6), done.
+From c:/Users/Rafael Lapagesse/desktop/leandro/repo
+   b7e6da4..55d19e0  master     -> origin/master
+Updating b7e6da4..55d19e0
+Fast-forward
+ bubble-sort.txt |   0
+ intro-git.txt   | 300 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 300 insertions(+)
+ create mode 100644 bubble-sort.txt
+ create mode 100644 intro-git.txt
+
